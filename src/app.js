@@ -6,7 +6,7 @@ const conexao = await connectNaDatabase();
 
 conexao.on("erro", (erro) => {
     console.error("erro de conexão", erro)
-}); //nesse metodo foi criado um parametro de erro, para receber um aviso caso a conexao nao de certo
+}); 
 
 conexao.once("open", () => {
     console.log("Conexao com o bano de dados ok")

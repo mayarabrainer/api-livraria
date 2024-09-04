@@ -29,8 +29,7 @@ class AutorController {
             res.status(201).json({message: "Criado com sucesso", Autor: novoAutor});
         } catch (erro) {
             res.status(500).json({message: `${erro.message} - falha ao cadastrar Autor`});
-        }//É uma forma esperada de lidar com o erro, nao quebrando a aplicação caso ocorra um erro
-         //conseguindo descubrir com mais clareza onde os erros estao acontecendo
+        }
     };
 
     static async atualizarAutor (req, res) {

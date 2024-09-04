@@ -35,8 +35,7 @@ class LivroController {
             res.status(201).json({message: "Criado com sucesso", livro: novoLivro});
         } catch (erro) {
             res.status(500).json({message: `${erro.message} - falha ao cadastrar livro`});
-        }//É uma forma esperada de lidar com o erro, nao quebrando a aplicação caso ocorra um erro
-         //conseguindo descubrir com mais clareza onde os erros estao acontecendo
+        }
     };
 
     static async atualizarLivro (req, res) {
